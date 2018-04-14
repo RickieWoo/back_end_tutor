@@ -7,8 +7,6 @@ const debug = require('debug')('TEST');
 chai.use(require('chai-http'));
 chai.use(require('chai-json-schema'));
 
-
-
 let getUserSchema = {
     title: 'Entry Response JSON Schema v1',
     type: 'object',
@@ -20,9 +18,9 @@ let getUserSchema = {
 
 describe('test create API', function () {
 
-    this.timeout(15000);
+    // this.timeout(15000);
 
-    it('createUser', done => {
+    it('should return a value', done => {
 
         let body = {user_name: 'test_user', phone: '123456789'};
 
@@ -32,7 +30,7 @@ describe('test create API', function () {
             .end((err, res) => {
                 console.log('res: ', res.body);
                 debug(JSON.stringify(res.body, null, 2));
-                // expect(res.body).to.be.jsonSchema(getUserSchema);
+                expect(res.body).to.be.jsonSchema(getUserSchema);
                 done();
             })
     });

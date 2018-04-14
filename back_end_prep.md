@@ -8,7 +8,7 @@
 
 1. 熟悉`JavaScript`基本语法，并了解`express`框架
 2. 安装并更更新`node.js` /` npm` / `pm2` 环境
-3. 数据库了解，推荐`dynamodb`， 安装相应环境
+3. 数据库了解，推荐`mongodb`， 安装相应环境
 2. `npm`的用法, `npm install`的各个参数意义 `--save` / `--save-dev` / `-g`
 3. `npm`常用模块的功能了了解，`debug`/`joi`/`request`/`config`/`morgan`
 4. `JsonSchema`了解（实在不行至少JSON要了解）
